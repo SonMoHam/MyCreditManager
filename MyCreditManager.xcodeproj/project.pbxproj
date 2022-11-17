@@ -13,6 +13,7 @@
 		1224998229261214003665DA /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224998129261214003665DA /* AppManager.swift */; };
 		12249984292614EC003665DA /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12249983292614EC003665DA /* Subject.swift */; };
 		1224998629261578003665DA /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224998529261578003665DA /* Student.swift */; };
+		122499882926181F003665DA /* SubjectGrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122499872926181F003665DA /* SubjectGrade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		1224998129261214003665DA /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		12249983292614EC003665DA /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		1224998529261578003665DA /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		122499872926181F003665DA /* SubjectGrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectGrade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				1224996F2925D88A003665DA /* Grade.swift */,
 				12249983292614EC003665DA /* Subject.swift */,
 				1224998529261578003665DA /* Student.swift */,
+				122499872926181F003665DA /* SubjectGrade.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				1224998029260E07003665DA /* ServiceMenu.swift in Sources */,
 				1224998629261578003665DA /* Student.swift in Sources */,
 				12249984292614EC003665DA /* Subject.swift in Sources */,
+				122499882926181F003665DA /* SubjectGrade.swift in Sources */,
 				122499672925D812003665DA /* main.swift in Sources */,
 				122499702925D88A003665DA /* Grade.swift in Sources */,
 				1224998229261214003665DA /* AppManager.swift in Sources */,
