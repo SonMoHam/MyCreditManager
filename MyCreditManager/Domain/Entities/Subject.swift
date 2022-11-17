@@ -11,6 +11,6 @@ struct Subject {
     let name: String
 }
 
-extension Subject: Identifiable {
+extension Subject: Identifiable, Equatable {
     var id: String { name }
 }
