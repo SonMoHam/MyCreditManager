@@ -17,6 +17,7 @@
 		1224998B29261C41003665DA /* MenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224998A29261C41003665DA /* MenuService.swift */; };
 		1224998D2926201F003665DA /* StudentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224998C2926201F003665DA /* StudentService.swift */; };
 		1224998F292620A8003665DA /* GradeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224998E292620A8003665DA /* GradeService.swift */; };
+		12249992292621BA003665DA /* StudentUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12249991292621BA003665DA /* StudentUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		1224998A29261C41003665DA /* MenuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuService.swift; sourceTree = "<group>"; };
 		1224998C2926201F003665DA /* StudentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentService.swift; sourceTree = "<group>"; };
 		1224998E292620A8003665DA /* GradeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeService.swift; sourceTree = "<group>"; };
+		12249991292621BA003665DA /* StudentUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				1224996E2925D862003665DA /* Entities */,
+				1224999029262171003665DA /* UseCases */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -127,6 +130,14 @@
 				1224998E292620A8003665DA /* GradeService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		1224999029262171003665DA /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				12249991292621BA003665DA /* StudentUseCase.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 				12249984292614EC003665DA /* Subject.swift in Sources */,
 				122499882926181F003665DA /* SubjectGrade.swift in Sources */,
 				122499672925D812003665DA /* main.swift in Sources */,
+				12249992292621BA003665DA /* StudentUseCase.swift in Sources */,
 				122499702925D88A003665DA /* Grade.swift in Sources */,
 				1224998229261214003665DA /* AppManager.swift in Sources */,
 			);
