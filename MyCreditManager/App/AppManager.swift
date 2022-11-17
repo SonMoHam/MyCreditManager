@@ -12,10 +12,12 @@ final class AppManager {
     private let studentService: StudentService
     private let gradeService: GradeService
     
-    init() {
+    init(useCaseProvider: UseCaseProvider) {
+        let studentUseCase = useCaseProvider.makeStudentUseCase()
+        let subjectGradeUseCase = useCaseProvider.makeSubjectGradeUseCase()
         self.menuService = MenuService()
-        self.studentService = StudentService()
-        self.gradeService = GradeService()
+        self.studentService = StudentService(studentUseCase: studentUseCase)
+        self.gradeService = GradeService(subjectGradeUseCase: subjectGradeUseCase)
     }
     
     func start() {
