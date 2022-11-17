@@ -21,6 +21,7 @@
 		12249994292623D6003665DA /* SubjectGradeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12249993292623D6003665DA /* SubjectGradeUseCase.swift */; };
 		12249996292625E7003665DA /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12249995292625E7003665DA /* UseCaseProvider.swift */; };
 		1224999A2926270A003665DA /* StudentUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122499992926270A003665DA /* StudentUseCaseImpl.swift */; };
+		1224999D292629A0003665DA /* Result+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224999C292629A0003665DA /* Result+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +52,7 @@
 		12249993292623D6003665DA /* SubjectGradeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectGradeUseCase.swift; sourceTree = "<group>"; };
 		12249995292625E7003665DA /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
 		122499992926270A003665DA /* StudentUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentUseCaseImpl.swift; sourceTree = "<group>"; };
+		1224999C292629A0003665DA /* Result+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +85,12 @@
 		122499652925D812003665DA /* MyCreditManager */ = {
 			isa = PBXGroup;
 			children = (
-				1224997E29260DE7003665DA /* Common */,
 				122499712925D891003665DA /* App */,
 				1224998929261C1D003665DA /* Services */,
 				1224996D2925D858003665DA /* Domain */,
 				12249997292626D8003665DA /* Data */,
+				1224999B2926296F003665DA /* Util */,
+				1224997E29260DE7003665DA /* Common */,
 			);
 			path = MyCreditManager;
 			sourceTree = "<group>";
@@ -165,6 +168,14 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
+		1224999B2926296F003665DA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				1224999C292629A0003665DA /* Result+.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,6 +243,7 @@
 				12249994292623D6003665DA /* SubjectGradeUseCase.swift in Sources */,
 				12249984292614EC003665DA /* Subject.swift in Sources */,
 				122499882926181F003665DA /* SubjectGrade.swift in Sources */,
+				1224999D292629A0003665DA /* Result+.swift in Sources */,
 				122499672925D812003665DA /* main.swift in Sources */,
 				12249996292625E7003665DA /* UseCaseProvider.swift in Sources */,
 				12249992292621BA003665DA /* StudentUseCase.swift in Sources */,
