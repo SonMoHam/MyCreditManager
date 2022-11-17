@@ -18,6 +18,7 @@
 		1224998D2926201F003665DA /* StudentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224998C2926201F003665DA /* StudentService.swift */; };
 		1224998F292620A8003665DA /* GradeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224998E292620A8003665DA /* GradeService.swift */; };
 		12249992292621BA003665DA /* StudentUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12249991292621BA003665DA /* StudentUseCase.swift */; };
+		12249994292623D6003665DA /* SubjectGradeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12249993292623D6003665DA /* SubjectGradeUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,7 @@
 		1224998C2926201F003665DA /* StudentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentService.swift; sourceTree = "<group>"; };
 		1224998E292620A8003665DA /* GradeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeService.swift; sourceTree = "<group>"; };
 		12249991292621BA003665DA /* StudentUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentUseCase.swift; sourceTree = "<group>"; };
+		12249993292623D6003665DA /* SubjectGradeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectGradeUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				12249991292621BA003665DA /* StudentUseCase.swift */,
+				12249993292623D6003665DA /* SubjectGradeUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				1224998629261578003665DA /* Student.swift in Sources */,
 				1224998D2926201F003665DA /* StudentService.swift in Sources */,
 				1224998B29261C41003665DA /* MenuService.swift in Sources */,
+				12249994292623D6003665DA /* SubjectGradeUseCase.swift in Sources */,
 				12249984292614EC003665DA /* Subject.swift in Sources */,
 				122499882926181F003665DA /* SubjectGrade.swift in Sources */,
 				122499672925D812003665DA /* main.swift in Sources */,
