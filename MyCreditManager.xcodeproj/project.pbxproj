@@ -19,6 +19,7 @@
 		1224998F292620A8003665DA /* GradeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224998E292620A8003665DA /* GradeService.swift */; };
 		12249992292621BA003665DA /* StudentUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12249991292621BA003665DA /* StudentUseCase.swift */; };
 		12249994292623D6003665DA /* SubjectGradeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12249993292623D6003665DA /* SubjectGradeUseCase.swift */; };
+		12249996292625E7003665DA /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12249995292625E7003665DA /* UseCaseProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,7 @@
 		1224998E292620A8003665DA /* GradeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeService.swift; sourceTree = "<group>"; };
 		12249991292621BA003665DA /* StudentUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentUseCase.swift; sourceTree = "<group>"; };
 		12249993292623D6003665DA /* SubjectGradeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectGradeUseCase.swift; sourceTree = "<group>"; };
+		12249995292625E7003665DA /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			children = (
 				12249991292621BA003665DA /* StudentUseCase.swift */,
 				12249993292623D6003665DA /* SubjectGradeUseCase.swift */,
+				12249995292625E7003665DA /* UseCaseProvider.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				12249984292614EC003665DA /* Subject.swift in Sources */,
 				122499882926181F003665DA /* SubjectGrade.swift in Sources */,
 				122499672925D812003665DA /* main.swift in Sources */,
+				12249996292625E7003665DA /* UseCaseProvider.swift in Sources */,
 				12249992292621BA003665DA /* StudentUseCase.swift in Sources */,
 				122499702925D88A003665DA /* Grade.swift in Sources */,
 				1224998229261214003665DA /* AppManager.swift in Sources */,
