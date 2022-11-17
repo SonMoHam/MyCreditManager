@@ -10,6 +10,7 @@
 		122499672925D812003665DA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122499662925D812003665DA /* main.swift */; };
 		122499702925D88A003665DA /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224996F2925D88A003665DA /* Grade.swift */; };
 		1224998029260E07003665DA /* ServiceMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224997F29260E07003665DA /* ServiceMenu.swift */; };
+		1224998229261214003665DA /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224998129261214003665DA /* AppManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		122499662925D812003665DA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1224996F2925D88A003665DA /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
 		1224997F29260E07003665DA /* ServiceMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceMenu.swift; sourceTree = "<group>"; };
+		1224998129261214003665DA /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				122499662925D812003665DA /* main.swift */,
+				1224998129261214003665DA /* AppManager.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				1224998029260E07003665DA /* ServiceMenu.swift in Sources */,
 				122499672925D812003665DA /* main.swift in Sources */,
 				122499702925D88A003665DA /* Grade.swift in Sources */,
+				1224998229261214003665DA /* AppManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
