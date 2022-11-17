@@ -8,6 +8,12 @@
 import Foundation
 
 final class GradeService {
+    private let subjectGradeUseCase: SubjectGradeUseCase
+    
+    init(subjectGradeUseCase: SubjectGradeUseCase) {
+        self.subjectGradeUseCase = subjectGradeUseCase
+    }
+    
     func put() {
         
     }

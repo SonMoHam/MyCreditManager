@@ -8,6 +8,12 @@
 import Foundation
 
 final class StudentService {
+    private let studentUseCase: StudentUseCase
+    
+    init(studentUseCase: StudentUseCase) {
+        self.studentUseCase = studentUseCase
+    }
+    
     func post() {
         
     }
