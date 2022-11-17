@@ -20,6 +20,7 @@
 		12249992292621BA003665DA /* StudentUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12249991292621BA003665DA /* StudentUseCase.swift */; };
 		12249994292623D6003665DA /* SubjectGradeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12249993292623D6003665DA /* SubjectGradeUseCase.swift */; };
 		12249996292625E7003665DA /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12249995292625E7003665DA /* UseCaseProvider.swift */; };
+		1224999A2926270A003665DA /* StudentUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122499992926270A003665DA /* StudentUseCaseImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,7 @@
 		12249991292621BA003665DA /* StudentUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentUseCase.swift; sourceTree = "<group>"; };
 		12249993292623D6003665DA /* SubjectGradeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectGradeUseCase.swift; sourceTree = "<group>"; };
 		12249995292625E7003665DA /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
+		122499992926270A003665DA /* StudentUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentUseCaseImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				122499712925D891003665DA /* App */,
 				1224998929261C1D003665DA /* Services */,
 				1224996D2925D858003665DA /* Domain */,
+				12249997292626D8003665DA /* Data */,
 			);
 			path = MyCreditManager;
 			sourceTree = "<group>";
@@ -142,6 +145,22 @@
 				12249991292621BA003665DA /* StudentUseCase.swift */,
 				12249993292623D6003665DA /* SubjectGradeUseCase.swift */,
 				12249995292625E7003665DA /* UseCaseProvider.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		12249997292626D8003665DA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				12249998292626EF003665DA /* UseCases */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		12249998292626EF003665DA /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				122499992926270A003665DA /* StudentUseCaseImpl.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -209,6 +228,7 @@
 				1224998629261578003665DA /* Student.swift in Sources */,
 				1224998D2926201F003665DA /* StudentService.swift in Sources */,
 				1224998B29261C41003665DA /* MenuService.swift in Sources */,
+				1224999A2926270A003665DA /* StudentUseCaseImpl.swift in Sources */,
 				12249994292623D6003665DA /* SubjectGradeUseCase.swift in Sources */,
 				12249984292614EC003665DA /* Subject.swift in Sources */,
 				122499882926181F003665DA /* SubjectGrade.swift in Sources */,
