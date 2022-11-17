@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		122499672925D812003665DA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122499662925D812003665DA /* main.swift */; };
+		122499702925D88A003665DA /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224996F2925D88A003665DA /* Grade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		122499632925D812003665DA /* MyCreditManager */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyCreditManager; sourceTree = BUILT_PRODUCTS_DIR; };
 		122499662925D812003665DA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1224996F2925D88A003665DA /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +59,34 @@
 		122499652925D812003665DA /* MyCreditManager */ = {
 			isa = PBXGroup;
 			children = (
-				122499662925D812003665DA /* main.swift */,
+				122499712925D891003665DA /* App */,
+				1224996D2925D858003665DA /* Domain */,
 			);
 			path = MyCreditManager;
+			sourceTree = "<group>";
+		};
+		1224996D2925D858003665DA /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1224996E2925D862003665DA /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		1224996E2925D862003665DA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				1224996F2925D88A003665DA /* Grade.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		122499712925D891003665DA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				122499662925D812003665DA /* main.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				122499672925D812003665DA /* main.swift in Sources */,
+				122499702925D88A003665DA /* Grade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
