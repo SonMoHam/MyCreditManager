@@ -8,14 +8,16 @@
 import Foundation
 
 final class AppManager {
+    private let menuService: MenuService
+    
+    init() {
+        self.menuService = MenuService()
+    }
+    
     func start() {
         while true {
-            let serviceValue = getSelectService()
-            guard let selectMenu = ServiceMenu(rawValue: serviceValue) else {
-                print("뭔가 입력이 잘못되었습니다. 1~5 사이의 숫자 혹은 X를 입력해주세요.")
-                continue
-            }
-            
+            let selectMenu = menuService.getSelectMenu()
+
             switch selectMenu {
             case .postStudent:
                 print(selectMenu)
@@ -33,10 +35,5 @@ final class AppManager {
             }
         }
     }
-    
-    private func getSelectService() -> String {
-        print("\n원하는 기능을 입력해주세요")
-        print(ServiceMenu.selectGuide)
-        return readLine() ?? ""
-    }
+
 }
