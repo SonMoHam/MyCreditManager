@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct SubjectGrade {
+public struct SubjectGrade {
     let student: Student
     let subject: Subject
     let grade: Grade
 }
 
 extension SubjectGrade: Equatable {
-    static func == (lhs: SubjectGrade, rhs: SubjectGrade) -> Bool {
+    public static func == (lhs: SubjectGrade, rhs: SubjectGrade) -> Bool {
         lhs.student == rhs.student && lhs.subject == rhs.subject    // 동일 학생, 동일 과목의 경우
     }
 }

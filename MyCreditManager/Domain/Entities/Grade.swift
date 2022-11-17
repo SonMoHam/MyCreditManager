@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Grade: String, CustomStringConvertible {
+public enum Grade: String, CustomStringConvertible {
     case aP
     case a
     case bP
@@ -23,11 +23,11 @@ enum Grade: String, CustomStringConvertible {
         self.init(rawValue: str)
     }
     
-    var description: String {
+    public var description: String {
         return self.rawValue.uppercased().replacingOccurrences(of: "P", with: "+")
     }
     
-    var score: Double {
+    public var score: Double {
         switch self {
         case .aP:
             return 4.5

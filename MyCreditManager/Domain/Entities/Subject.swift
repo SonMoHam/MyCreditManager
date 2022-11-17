@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct Subject {
+public struct Subject {
     let name: String
 }
 
 extension Subject: Identifiable, Equatable {
-    var id: String { name }
+    public var id: String { name }
 }
