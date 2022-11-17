@@ -22,6 +22,7 @@
 		12249996292625E7003665DA /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12249995292625E7003665DA /* UseCaseProvider.swift */; };
 		1224999A2926270A003665DA /* StudentUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122499992926270A003665DA /* StudentUseCaseImpl.swift */; };
 		1224999D292629A0003665DA /* Result+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224999C292629A0003665DA /* Result+.swift */; };
+		1224999F29262A92003665DA /* SubjectGradeUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224999E29262A92003665DA /* SubjectGradeUseCaseImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +54,7 @@
 		12249995292625E7003665DA /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
 		122499992926270A003665DA /* StudentUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentUseCaseImpl.swift; sourceTree = "<group>"; };
 		1224999C292629A0003665DA /* Result+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+.swift"; sourceTree = "<group>"; };
+		1224999E29262A92003665DA /* SubjectGradeUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectGradeUseCaseImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				122499992926270A003665DA /* StudentUseCaseImpl.swift */,
+				1224999E29262A92003665DA /* SubjectGradeUseCaseImpl.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				1224998D2926201F003665DA /* StudentService.swift in Sources */,
 				1224998B29261C41003665DA /* MenuService.swift in Sources */,
 				1224999A2926270A003665DA /* StudentUseCaseImpl.swift in Sources */,
+				1224999F29262A92003665DA /* SubjectGradeUseCaseImpl.swift in Sources */,
 				12249994292623D6003665DA /* SubjectGradeUseCase.swift in Sources */,
 				12249984292614EC003665DA /* Subject.swift in Sources */,
 				122499882926181F003665DA /* SubjectGrade.swift in Sources */,
