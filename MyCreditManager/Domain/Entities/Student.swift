@@ -10,3 +10,7 @@ import Foundation
 struct Student {
     let name: String
 }
+
+extension Student: Identifiable {
+    var id: String { name }
+}

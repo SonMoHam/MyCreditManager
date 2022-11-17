@@ -10,3 +10,7 @@ import Foundation
 struct Subject {
     let name: String
 }
+
+extension Subject: Identifiable {
+    var id: String { name }
+}
