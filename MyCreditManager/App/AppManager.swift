@@ -10,10 +10,12 @@ import Foundation
 final class AppManager {
     private let menuService: MenuService
     private let studentService: StudentService
+    private let gradeService: GradeService
     
     init() {
         self.menuService = MenuService()
         self.studentService = StudentService()
+        self.gradeService = GradeService()
     }
     
     func start() {
@@ -26,11 +28,11 @@ final class AppManager {
             case .deleteStudent:
                 studentService.delete()
             case .putSubjectGrade:
-                print(selectMenu)
+                gradeService.put()
             case .deleteSubjectGrade:
-                print(selectMenu)
+                gradeService.delete()
             case .getTotalGrade:
-                print(selectMenu)
+                gradeService.getTotal()
             case .end:
                 print("프로그램을 종료합니다...")
                 return

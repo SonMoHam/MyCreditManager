@@ -16,6 +16,7 @@
 		122499882926181F003665DA /* SubjectGrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122499872926181F003665DA /* SubjectGrade.swift */; };
 		1224998B29261C41003665DA /* MenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224998A29261C41003665DA /* MenuService.swift */; };
 		1224998D2926201F003665DA /* StudentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224998C2926201F003665DA /* StudentService.swift */; };
+		1224998F292620A8003665DA /* GradeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224998E292620A8003665DA /* GradeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		122499872926181F003665DA /* SubjectGrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectGrade.swift; sourceTree = "<group>"; };
 		1224998A29261C41003665DA /* MenuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuService.swift; sourceTree = "<group>"; };
 		1224998C2926201F003665DA /* StudentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentService.swift; sourceTree = "<group>"; };
+		1224998E292620A8003665DA /* GradeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			children = (
 				1224998A29261C41003665DA /* MenuService.swift */,
 				1224998C2926201F003665DA /* StudentService.swift */,
+				1224998E292620A8003665DA /* GradeService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1224998029260E07003665DA /* ServiceMenu.swift in Sources */,
+				1224998F292620A8003665DA /* GradeService.swift in Sources */,
 				1224998629261578003665DA /* Student.swift in Sources */,
 				1224998D2926201F003665DA /* StudentService.swift in Sources */,
 				1224998B29261C41003665DA /* MenuService.swift in Sources */,
