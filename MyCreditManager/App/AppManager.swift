@@ -9,9 +9,11 @@ import Foundation
 
 final class AppManager {
     private let menuService: MenuService
+    private let studentService: StudentService
     
     init() {
         self.menuService = MenuService()
+        self.studentService = StudentService()
     }
     
     func start() {
@@ -20,9 +22,9 @@ final class AppManager {
 
             switch selectMenu {
             case .postStudent:
-                print(selectMenu)
+                studentService.post()
             case .deleteStudent:
-                print(selectMenu)
+                studentService.delete()
             case .putSubjectGrade:
                 print(selectMenu)
             case .deleteSubjectGrade:
