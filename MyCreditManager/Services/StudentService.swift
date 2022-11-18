@@ -16,7 +16,7 @@ final class StudentService {
     
     func post() {
         let guide = "추가할 학생의 이름을 입력해주세요"
-        let name = getStudentName(inputGuide: guide)
+        guard let name = getStudentName(inputGuide: guide) else { return }
         let student = Student(name: name)
         let result = studentUseCase.insert(student)
         switch result {
@@ -29,7 +29,7 @@ final class StudentService {
     
     func delete() {
         let guide = "삭제할 학생의 이름을 입력해주세요"
-        let name = getStudentName(inputGuide: guide)
+        guard let name = getStudentName(inputGuide: guide) else { return }
         let result = studentUseCase.delete(name: name)
         switch result {
         case .success:
@@ -40,15 +40,13 @@ final class StudentService {
     }
     
     
-    private func getStudentName(inputGuide: String) -> String {
-        while true {
-            print(inputGuide)
-            if let input = readLine(), input.isValid() {
-                return input.capitalized    // 대소문자 형식 고정
-            } else {
-                print("입력이 잘못되었습니다. 다시 확인해주세요.")
-                continue
-            }
+    private func getStudentName(inputGuide: String) -> String? {
+        print(inputGuide)
+        if let input = readLine(), input.isValid() {
+            return input.capitalized    // 대소문자 형식 고정
+        } else {
+            print("입력이 잘못되었습니다. 다시 확인해주세요.")
+            return nil
         }
     }
 }
