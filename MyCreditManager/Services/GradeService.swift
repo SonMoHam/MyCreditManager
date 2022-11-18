@@ -53,7 +53,7 @@ final class GradeService {
             return nil
         }
         let params = input.split(separator: " ").map { String($0) }
-        guard let grade = Grade(rawValue: params[2]) else {
+        guard let grade = Grade(params[2]) else {
             showInputInvalid()
             return nil
         }
