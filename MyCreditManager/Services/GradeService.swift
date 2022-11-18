@@ -39,7 +39,26 @@ final class GradeService {
     }
     
     func getTotal() {
-        
+        guard let studentName = getStudentName() else { return }
+        let result = subjectGradeUseCase.get(studentName: studentName)
+        switch result {
+        case .success(let subjectGrades):
+            let avgPoint = subjectGrades
+                .map { $0.grade.score }
+                .reduce(0.0) { $0 + $1 } / Double(subjectGrades.count)
+
+            subjectGrades.forEach {
+                print("\($0.subject.name): \($0.grade)")
+            }
+            let decimalPlace = Double(2)
+            let decimalNum = pow(10.0, decimalPlace)
+            let truncated = floor(avgPoint * decimalNum) / decimalNum
+            let avgStr = truncated == floor(truncated) ? "\(Int(truncated))" : "\(truncated)"
+            print("평점 : \(avgStr)")
+            
+        case .failure(let error):
+            print(error.localizedDescription)
+        }
     }
     
     private func getPutQuery() -> SubjectGrade? {
@@ -74,6 +93,18 @@ final class GradeService {
             return nil
         }
         return (studentName: params[0], subjectName: params[1])
+    }
+    
+    private func getStudentName() -> String? {
+        let guide = "평점을 알고싶은 학생의 이름을 입력해주세요"
+        print(guide)
+        guard let input = readLine()?.capitalized,
+              input.isValid()
+        else {
+            showInputInvalid()
+            return nil
+        }
+        return input
     }
     
     private func showInputInvalid() {
