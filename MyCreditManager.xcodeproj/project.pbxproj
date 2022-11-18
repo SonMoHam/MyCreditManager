@@ -28,6 +28,8 @@
 		122499A729275227003665DA /* StudentsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122499A629275227003665DA /* StudentsStorage.swift */; };
 		122499A929275C05003665DA /* UserDefaultsAvailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122499A829275C05003665DA /* UserDefaultsAvailable.swift */; };
 		122499AB29275E59003665DA /* UserDefaultsStudentsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122499AA29275E59003665DA /* UserDefaultsStudentsStorage.swift */; };
+		122499AE2927682C003665DA /* SubjectGradesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122499AD2927682C003665DA /* SubjectGradesStorage.swift */; };
+		122499B0292768D3003665DA /* UserDefaultsSubjectGradesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122499AF292768D3003665DA /* UserDefaultsSubjectGradesStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,6 +67,8 @@
 		122499A629275227003665DA /* StudentsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsStorage.swift; sourceTree = "<group>"; };
 		122499A829275C05003665DA /* UserDefaultsAvailable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsAvailable.swift; sourceTree = "<group>"; };
 		122499AA29275E59003665DA /* UserDefaultsStudentsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStudentsStorage.swift; sourceTree = "<group>"; };
+		122499AD2927682C003665DA /* SubjectGradesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectGradesStorage.swift; sourceTree = "<group>"; };
+		122499AF292768D3003665DA /* UserDefaultsSubjectGradesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsSubjectGradesStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +200,7 @@
 		122499A4292751B7003665DA /* Storages */ = {
 			isa = PBXGroup;
 			children = (
+				122499AC2927680E003665DA /* SubjectGradesStorage */,
 				122499A5292751F8003665DA /* StudentsStorage */,
 			);
 			path = Storages;
@@ -208,6 +213,15 @@
 				122499AA29275E59003665DA /* UserDefaultsStudentsStorage.swift */,
 			);
 			path = StudentsStorage;
+			sourceTree = "<group>";
+		};
+		122499AC2927680E003665DA /* SubjectGradesStorage */ = {
+			isa = PBXGroup;
+			children = (
+				122499AD2927682C003665DA /* SubjectGradesStorage.swift */,
+				122499AF292768D3003665DA /* UserDefaultsSubjectGradesStorage.swift */,
+			);
+			path = SubjectGradesStorage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +286,7 @@
 				1224998F292620A8003665DA /* GradeService.swift in Sources */,
 				122499A929275C05003665DA /* UserDefaultsAvailable.swift in Sources */,
 				1224998629261578003665DA /* Student.swift in Sources */,
+				122499AE2927682C003665DA /* SubjectGradesStorage.swift in Sources */,
 				1224998D2926201F003665DA /* StudentService.swift in Sources */,
 				1224998B29261C41003665DA /* MenuService.swift in Sources */,
 				122499AB29275E59003665DA /* UserDefaultsStudentsStorage.swift in Sources */,
@@ -285,6 +300,7 @@
 				122499672925D812003665DA /* main.swift in Sources */,
 				122499A729275227003665DA /* StudentsStorage.swift in Sources */,
 				12249996292625E7003665DA /* UseCaseProvider.swift in Sources */,
+				122499B0292768D3003665DA /* UserDefaultsSubjectGradesStorage.swift in Sources */,
 				12249992292621BA003665DA /* StudentUseCase.swift in Sources */,
 				122499A129262C43003665DA /* UseCaseProviderImpl.swift in Sources */,
 				122499702925D88A003665DA /* Grade.swift in Sources */,
