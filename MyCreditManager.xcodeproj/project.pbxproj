@@ -30,6 +30,7 @@
 		122499AB29275E59003665DA /* UserDefaultsStudentsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122499AA29275E59003665DA /* UserDefaultsStudentsStorage.swift */; };
 		122499AE2927682C003665DA /* SubjectGradesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122499AD2927682C003665DA /* SubjectGradesStorage.swift */; };
 		122499B0292768D3003665DA /* UserDefaultsSubjectGradesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122499AF292768D3003665DA /* UserDefaultsSubjectGradesStorage.swift */; };
+		122499B229277226003665DA /* StudentManageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122499B129277226003665DA /* StudentManageError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,6 +70,7 @@
 		122499AA29275E59003665DA /* UserDefaultsStudentsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStudentsStorage.swift; sourceTree = "<group>"; };
 		122499AD2927682C003665DA /* SubjectGradesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectGradesStorage.swift; sourceTree = "<group>"; };
 		122499AF292768D3003665DA /* UserDefaultsSubjectGradesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsSubjectGradesStorage.swift; sourceTree = "<group>"; };
+		122499B129277226003665DA /* StudentManageError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentManageError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				1224997F29260E07003665DA /* ServiceMenu.swift */,
+				122499B129277226003665DA /* StudentManageError.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				122499B0292768D3003665DA /* UserDefaultsSubjectGradesStorage.swift in Sources */,
 				12249992292621BA003665DA /* StudentUseCase.swift in Sources */,
 				122499A129262C43003665DA /* UseCaseProviderImpl.swift in Sources */,
+				122499B229277226003665DA /* StudentManageError.swift in Sources */,
 				122499702925D88A003665DA /* Grade.swift in Sources */,
 				1224998229261214003665DA /* AppManager.swift in Sources */,
 			);
