@@ -27,6 +27,7 @@
 		122499A32926313D003665DA /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122499A22926313D003665DA /* String+.swift */; };
 		122499A729275227003665DA /* StudentsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122499A629275227003665DA /* StudentsStorage.swift */; };
 		122499A929275C05003665DA /* UserDefaultsAvailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122499A829275C05003665DA /* UserDefaultsAvailable.swift */; };
+		122499AB29275E59003665DA /* UserDefaultsStudentsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122499AA29275E59003665DA /* UserDefaultsStudentsStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,6 +64,7 @@
 		122499A22926313D003665DA /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		122499A629275227003665DA /* StudentsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsStorage.swift; sourceTree = "<group>"; };
 		122499A829275C05003665DA /* UserDefaultsAvailable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsAvailable.swift; sourceTree = "<group>"; };
+		122499AA29275E59003665DA /* UserDefaultsStudentsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStudentsStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				122499A629275227003665DA /* StudentsStorage.swift */,
+				122499AA29275E59003665DA /* UserDefaultsStudentsStorage.swift */,
 			);
 			path = StudentsStorage;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				1224998629261578003665DA /* Student.swift in Sources */,
 				1224998D2926201F003665DA /* StudentService.swift in Sources */,
 				1224998B29261C41003665DA /* MenuService.swift in Sources */,
+				122499AB29275E59003665DA /* UserDefaultsStudentsStorage.swift in Sources */,
 				1224999A2926270A003665DA /* StudentUseCaseImpl.swift in Sources */,
 				1224999F29262A92003665DA /* SubjectGradeUseCaseImpl.swift in Sources */,
 				12249994292623D6003665DA /* SubjectGradeUseCase.swift in Sources */,
