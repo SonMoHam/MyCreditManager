@@ -22,7 +22,7 @@ final class GradeService {
             // TODO: 문자열 subjectGrade description으로 변경
             print("\(subjectGrade.student.name) 학생의 \(subjectGrade.subject.name) 과목이 \(subjectGrade.grade)로 추가(변경)되었습니다.")
         case .failure(let error):
-            print(error.localizedDescription)
+            print("\(subjectGrade.student.name) \(error.localizedDescription)")
         }
     }
     
@@ -34,7 +34,7 @@ final class GradeService {
         case .success:
             print("\(queryParams.studentName) 학생의 \(queryParams.subjectName) 과목의 성적이 삭제되었습니다.")
         case .failure(let error):
-            print(error.localizedDescription)
+            print("\(queryParams.studentName) \(error.localizedDescription)")
         }
     }
     
@@ -54,10 +54,10 @@ final class GradeService {
             let decimalNum = pow(10.0, decimalPlace)
             let truncated = floor(avgPoint * decimalNum) / decimalNum
             let avgStr = truncated == floor(truncated) ? "\(Int(truncated))" : "\(truncated)"
-            print("평점 : \(avgStr)")
+            print("평점 : \(subjectGrades.isEmpty ? "없음" : avgStr)")
             
         case .failure(let error):
-            print(error.localizedDescription)
+            print("\(studentName) \(error.localizedDescription)")
         }
     }
     
