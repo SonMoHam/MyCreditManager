@@ -11,6 +11,6 @@ public struct Student {
     let name: String
 }
 
-extension Student: Identifiable, Hashable {
+extension Student: Identifiable, Hashable, Codable {
     public var id: String { name }
 }

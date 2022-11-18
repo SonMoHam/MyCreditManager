@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum Grade: String, CustomStringConvertible {
+public enum Grade: String, CustomStringConvertible, Codable {
     case aP
     case a
     case bP
