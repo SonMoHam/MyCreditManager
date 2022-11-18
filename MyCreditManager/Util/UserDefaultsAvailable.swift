@@ -20,3 +20,12 @@ extension UserDefaultsAvailable where defaultKeys.RawValue == String {
         return UserDefaults.standard.object(forKey: key.rawValue)
     }
 }
+
+extension UserDefaults {
+    public struct StudentManage: UserDefaultsAvailable {
+        enum defaultKeys: String {
+            case students
+            case subjectGrades
+        }
+    }
+}
