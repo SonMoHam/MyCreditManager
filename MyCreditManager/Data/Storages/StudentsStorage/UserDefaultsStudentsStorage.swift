@@ -43,7 +43,7 @@ extension UserDefaultsStudentsStorage: StudentsStorage {
         let students = fetchStudents()
         if students.contains(student) {
             // TODO: return error: student.name은 이미 존재하는 학생입니다. 추가하지 않습니다
-            return .success
+            return .failure(stubError.stub)
         } else {
             var newStudents = students
             newStudents.append(student)
