@@ -43,7 +43,7 @@ extension UserDefaultsStudentsStorage: StudentsStorage {
         let students = fetchStudents()
         if students.contains(student) {
             // TODO: return error: student.name은 이미 존재하는 학생입니다. 추가하지 않습니다
-            return .failure(stubError.stub)
+            return .failure(StudentManageError.studentAlreadyExist)
         } else {
             var newStudents = students
             newStudents.append(student)
@@ -55,7 +55,7 @@ extension UserDefaultsStudentsStorage: StudentsStorage {
     func read(_ name: String) -> Result<Student, Error> {
         guard let target = search(name) else {
             // TODO: return error: student.name 학생을 찾지 못했습니다.
-            return .failure(stubError.stub)
+            return .failure(StudentManageError.studentNotFound)
         }
         return .success(target)
     }
@@ -63,7 +63,7 @@ extension UserDefaultsStudentsStorage: StudentsStorage {
     func delete(_ name: String) -> Result<Void, Error> {
         guard let target = search(name) else {
             // TODO: return error: student.name 학생을 찾지 못했습니다.
-            return .failure(stubError.stub)
+            return .failure(StudentManageError.studentNotFound)
         }
         let students = fetchStudents()
         let newStudents = students.filter { $0 != target }

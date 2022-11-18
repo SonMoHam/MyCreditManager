@@ -52,7 +52,7 @@ extension UserDefaultsSubjectGradesStorage: SubjectGradesStorage {
             return .success
         } else {
             // TODO: return error: student.name 학생을 찾지 못했습니다.
-            return .failure(stubError.stub)
+            return .failure(StudentManageError.studentNotFound)
         }
     }
     
@@ -65,7 +65,7 @@ extension UserDefaultsSubjectGradesStorage: SubjectGradesStorage {
             return .success(targetGrades)
         } else {
             // TODO: return error: student.name 학생을 찾지 못했습니다.
-            return .failure(stubError.stub)
+            return .failure(StudentManageError.studentNotFound)
         }
     }
     
@@ -81,7 +81,7 @@ extension UserDefaultsSubjectGradesStorage: SubjectGradesStorage {
             return .success
         } else {
             // TODO: return error: student.name 학생을 찾지 못했습니다.
-            return .failure(stubError.stub)
+            return .failure(StudentManageError.studentNotFound)
         }
     }
 }
