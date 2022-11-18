@@ -46,6 +46,7 @@ extension UserDefaultsSubjectGradesStorage: SubjectGradesStorage {
         let students = fetchStudents()
         if students.contains(subjectGrade.student) {
             var newGrades = fetchSubjectGrades()
+                .filter { $0 != subjectGrade }
             newGrades.append(subjectGrade)
             update(newGrades)
             return .success
@@ -70,11 +71,12 @@ extension UserDefaultsSubjectGradesStorage: SubjectGradesStorage {
     
     func delete(studentName: String, subjectName: String) -> Result<Void, Error> {
         let target = Student(name: studentName)
-        let targetSubject = Subject(name: subjectName)
+        let targetGrade = SubjectGrade(
+            student: target, subject: Subject(name: subjectName), grade: .f)
         let students = fetchStudents()
         if students.contains(target) {
             let newGrades = fetchSubjectGrades()
-                .filter { ($0.student != target) && ($0.subject != targetSubject) }
+                .filter { $0 != targetGrade }
             update(newGrades)
             return .success
         } else {
