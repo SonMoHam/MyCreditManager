@@ -23,7 +23,7 @@ final class StudentService {
         case .success:
             print("\(name) 학생을 추가했습니다.")
         case .failure(let error):
-            print(error.localizedDescription)
+            print("\(name)은 \(error.localizedDescription)")
         }
     }
     
@@ -35,7 +35,7 @@ final class StudentService {
         case .success:
             print("\(name) 학생을 삭제하였습니다.")
         case .failure(let error):
-            print(error.localizedDescription)
+            print("\(name) \(error.localizedDescription)")
         }
     }
     
