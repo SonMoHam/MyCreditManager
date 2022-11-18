@@ -17,4 +17,20 @@ public final class StubUseCaseProvider: UseCaseProvider {
     }
 }
 
-public final class DefaultUseCaseProvider { }
+public final class DefaultUseCaseProvider: UseCaseProvider {
+    private let studentsStorage: StudentsStorage
+    private let subjectGradesStorage: SubjectGradesStorage
+    
+    init() {
+        self.studentsStorage = UserDefaultsStudentsStorage()
+        self.subjectGradesStorage = UserDefaultsSubjectGradesStorage()
+    }
+    
+    public func makeStudentUseCase() -> StudentUseCase {
+        return DefaultStudentUseCase(studentsStorage: studentsStorage)
+    }
+    
+    public func makeSubjectGradeUseCase() -> SubjectGradeUseCase {
+        return DefaultSubjectGradeUseCase(subjectGradesStorage: subjectGradesStorage)
+    }
+}
