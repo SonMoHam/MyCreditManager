@@ -23,4 +23,22 @@ public final class StubStudentUseCase: StudentUseCase {
     }
 }
 
-public final class DefaultStudentUseCase { }
+public final class DefaultStudentUseCase: StudentUseCase {
+  private let studentsStorage: StudentsStorage
+    
+    init(studentsStorage: StudentsStorage) {
+        self.studentsStorage = studentsStorage
+    }
+    
+    public func get(name: String) -> Result<Student, Error> {
+        return studentsStorage.read(name)
+    }
+    
+    public func insert(_ student: Student) -> Result<Void, Error> {
+        return studentsStorage.create(student)
+    }
+    
+    public func delete(name: String) -> Result<Void, Error> {
+        return studentsStorage.delete(name)
+    }
+}
