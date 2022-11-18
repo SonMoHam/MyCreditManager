@@ -7,6 +7,6 @@
 
 import Foundation
 
-let useCaseProvider: UseCaseProvider = StubUseCaseProvider()
+let useCaseProvider: UseCaseProvider = DefaultUseCaseProvider()
 let appManger = AppManager(useCaseProvider: useCaseProvider)
 appManger.start()
