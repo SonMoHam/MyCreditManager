@@ -27,7 +27,15 @@ final class GradeService {
     }
     
     func delete() {
-        
+        guard let queryParams = getDeleteQuery() else { return }
+        let result = subjectGradeUseCase.delete(
+            studentName: queryParams.studentName, subjectName: queryParams.subjectName)
+        switch result {
+        case .success:
+            print("\(queryParams.studentName) 학생의 \(queryParams.subjectName) 과목의 성적이 삭제되었습니다.")
+        case .failure(let error):
+            print(error.localizedDescription)
+        }
     }
     
     func getTotal() {
@@ -54,6 +62,20 @@ final class GradeService {
                 subject: Subject(name: params[1]),
                 grade: grade)
         }
+    }
+    
+    private func getDeleteQuery() -> (studentName: String, subjectName: String)? {
+        let countOfQueryParams: Int = 2
+        let guide = "성적을 삭제할 학생의 이름, 과목 이름을 띄어쓰기로 구분하여 차례로 작성해주세요.\n입력예) Mickey Swift"
+        print(guide)
+        
+        guard let input = readLine(), validate(input, countOfQueryParams: countOfQueryParams)
+        else {
+            showInputInvalid()
+            return nil
+        }
+        let params = input.split(separator: " ").map { String($0) }
+        return (studentName: params[0], subjectName: params[1])
     }
     
     private func validate(_ input: String, countOfQueryParams: Int) -> Bool {
